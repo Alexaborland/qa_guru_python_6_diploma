@@ -1,6 +1,5 @@
 from selene import have, browser, be
-from tests_demo import resourсe
-from tests_demo.users.users import User
+
 
 
 class AddBookToCard:

@@ -13,6 +13,3 @@ def test_with_high_level_registration_page():
     registration.registration_new_user(user)
     registration.submit_registration()
     sleep(10)
-
-    #registration_page.registration(user)
-    #registration_page.submit_registration(user)

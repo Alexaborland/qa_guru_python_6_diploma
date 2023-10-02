@@ -12,10 +12,12 @@ def test_with_high_level_registration_page():
     # Выбираем комп
     pick_the_comp.open()
     pick_the_comp.pick_desktop_computer()
-    # pick_the_comp.sort_by_high_to_low_price()
-    # pick_the_comp.filter_by_price()
+    pick_the_comp.sort_by_high_to_low_price()
+    pick_the_comp.filter_by_price()
     pick_the_comp.pick_the_computer()
     pick_the_comp.pick_characteristics()
     pick_the_comp.check_the_cart()
-    sleep(10)
+
+
+
 

@@ -6,7 +6,7 @@
     "comment": "alexa_borland test passed",
     "reportLink": "${BUILD_URL}",
     "language": "en",
-    "allureFolder": "C:/Users/HP/AppData/Local/Temp/2041103061646954307/allure-report",
+    "allureFolder": "C:/Users/HP/AppData/Local/Temp/8396335216868437455/allure-report",
      "enableChart": true
   },
   "telegram": {

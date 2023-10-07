@@ -1,43 +1,52 @@
 from time import sleep
 
-from selene import have, browser, be
-from tests_demo import resourсe
-from tests_demo.users.users import User
+from selene import have, browser
+from selenium.webdriver import Keys
+
+from tests_demo.users.values import high_to_low_price, processor_fast, ram_8_gb, hdd_400, software
 
 
 class PickTheComputer:
 
-    def open(self):
+    def open_computer_section(self):
         browser.open('/computers')
 
     def pick_desktop_computer(self):
-        browser.all('[class="sub-category-item"]').element_by(have.exact_text('Desktops')).click()
+        browser.all('.sub-category-item').element_by(have.exact_text('Desktops')).click()
 
     def sort_by_high_to_low_price(self):
-        browser.element('[id="products-orderby"]').click()
-        browser.element('[value="https://demowebshop.tricentis.com/desktops?orderby=11"]').click()
+        browser.element('#products-orderby').click()
+        browser.element(high_to_low_price).click()
 
 
     def filter_by_price(self):
-        browser.all('[class="PriceRange"]')[3].click()
+        browser.all('.PriceRange')[3].click()
 
 
     def pick_the_computer(self):
-        browser.element('[class="price actual-price"]').should(have.tag('span'))
-        browser.element('[class="button-2 product-box-add-to-cart-button"]').click()
+        browser.all('.product-title').element_by(have.text('Build your own expensive computer')).click()
 
 
     def pick_characteristics(self):
-        browser.element('[id="product_attribute_74_5_26_82"]').click()
-        browser.element('[id="product_attribute_74_6_27_85"]').click()
-        browser.element('[id="product_attribute_74_3_28_87"]').click()
-        browser.element('[id="product_attribute_74_8_29_89"]').click()
-        browser.element('[id="add-to-cart-button-74"]').click()
+        browser.element(processor_fast).click()
+        browser.element(ram_8_gb).click()
+        browser.element(hdd_400).click()
+        browser.element(software).click()
+
+    def add_to_cart(self):
+        browser.element('#add-to-cart-button-74').click()
         sleep(3)
 
+    def click_the_shopping_cart(self):
+        browser.element('.ico-cart').click()
 
-
-    def check_the_cart(self):
-        browser.element('[id="topcartlink"]').click()
+    def checking(self):
+        #browser.all('.product-price order-total').should(have.text('2160'))
+        browser.element('#CountryId').click().type("ger").press_enter()
+        browser.element('#StateProvinceId').should(have.text('Other (Non US)'))
+        browser.element('#ZipPostalCode').type('123456')
+        browser.element('.inputs').click()
+        browser.element('#termsofservice').click()
+        browser.element('#checkout').click()
 
 

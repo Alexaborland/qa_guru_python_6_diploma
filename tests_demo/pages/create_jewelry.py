@@ -1,6 +1,9 @@
 from selene import have, browser, be
 from selenium.webdriver import Keys
-
+from tests_demo.users.values import view_as_list
+from tests_demo.users.values import chain_thickness
+from tests_demo.users.values import pendant
+from tests_demo.users.values import chain_length
 
 class CreateJewelry:
     def open_jewelry(self):
@@ -8,9 +11,14 @@ class CreateJewelry:
 
 
     def create_new(self):
-        browser.element('[id="products-viewmode"]').click()
-        browser.element('[value="https://demowebshop.tricentis.com/jewelry?viewmode=list"]').click()
-        browser.all('[class="product-title"]').element_by(have.exact_text('Create Your Own Jewelry')).click()
-        browser.element('[id="product_attribute_71_9_15"]').click().press(Keys.DOWN).press_enter()
+        browser.element('#products-viewmode').click()
+        browser.element(view_as_list).click()
+        browser.all('.product-title').element_by(have.exact_text('Create Your Own Jewelry')).click()
+        browser.element(chain_thickness).click().press(Keys.DOWN).press_enter()
+        browser.element(chain_length).type('15')
+        browser.element(pendant).click()
+
+    def add_to_cart(self):
+        browser.element('#add-to-cart-button-71').click()
 
 

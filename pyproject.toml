@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "qa-guru-python-6-diploma"
+version = "0.1.0"
+description = ""
+authors = ["Aleksandra Kashina <Borland3711@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = ">=7.4.2"
+selene = "2.0.b4"
+selenium = ">=4.2.0"
+pip = ">=23.1.2,<23.2.0"
+attrs = ">=23.1.0,<23.2.0"
+python-dotenv = ">=1.0.0,<1.1.0"
+allure-pytest = "^2.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

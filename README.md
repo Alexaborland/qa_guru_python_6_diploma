@@ -55,7 +55,7 @@
  
  <img width="100%" title="allure_main" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/allure_main.png"></code>
  
- Во вкладке Suites можно посмотреть собранныет тесты, у которых описаны шаги, приложены логи, скриншот и видео прохождения теста 
+ Во вкладке Suites можно посмотреть собранные тесты, у которых описаны шаги, приложены логи, скриншот и видео прохождения теста 
  
  <img width="100%" title="suites" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/suites.png"></code>
  
@@ -79,7 +79,7 @@
 
 ### <img width="5%" title="Telegram" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/images/telegram.png"> Интеграция с Telegram
 
-После прохождения тестов, в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах.
+После прохождения тестов в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах.
 
 <img width="50%" title="allure_tests" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/telegram_stats.png"></code>
  

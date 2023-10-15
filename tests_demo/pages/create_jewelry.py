@@ -5,10 +5,10 @@ from tests_demo.users.values import chain_thickness
 from tests_demo.users.values import pendant
 from tests_demo.users.values import chain_length
 
+
 class CreateJewelry:
     def open_jewelry(self):
         browser.open('/jewelry')
-
 
     def create_new(self):
         browser.element('#products-viewmode').click()
@@ -20,5 +20,8 @@ class CreateJewelry:
 
     def add_to_cart(self):
         browser.element('#add-to-cart-button-71').click()
+
+    def check_adding_to_cart(self):
+        browser.element('#bar-notification').should(be.visible.and_(have.text('The product has been added to your ')))
 
 

@@ -1,4 +1,4 @@
-from selene import have, browser
+from selene import have, browser, be
 
 class CheckCart:
     def click_the_shopping_cart(self):
@@ -12,3 +12,6 @@ class CheckCart:
         browser.element('.inputs').click()
         browser.element('#termsofservice').click()
         browser.element('#checkout').click()
+
+    def transition_to_login_page(self):
+        browser.element('.page-title').should(have.text('Welcome, Please Sign In!'))

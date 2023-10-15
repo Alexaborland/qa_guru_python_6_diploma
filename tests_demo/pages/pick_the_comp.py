@@ -1,8 +1,5 @@
 from time import sleep
-
-from selene import have, browser
-from selenium.webdriver import Keys
-
+from selene import have, browser, be
 from tests_demo.users.values import high_to_low_price, processor_fast, ram_8_gb, hdd_400, software
 
 
@@ -35,18 +32,23 @@ class PickTheComputer:
 
     def add_to_cart(self):
         browser.element('#add-to-cart-button-74').click()
-        sleep(3)
+        sleep(2)
+
+    def check_adding_to_cart(self):
+        browser.element('#bar-notification').should(be.visible.and_(have.text('The product has been added to your ')))
 
     def click_the_shopping_cart(self):
         browser.element('.ico-cart').click()
 
     def checking(self):
-        #browser.all('.product-price order-total').should(have.text('2160'))
         browser.element('#CountryId').click().type("ger").press_enter()
         browser.element('#StateProvinceId').should(have.text('Other (Non US)'))
         browser.element('#ZipPostalCode').type('123456')
         browser.element('.inputs').click()
         browser.element('#termsofservice').click()
         browser.element('#checkout').click()
+
+    def transition_to_login_page(self):
+        browser.element('.page-title').should(have.text('Welcome, Please Sign In!'))
 
 

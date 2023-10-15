@@ -18,9 +18,12 @@
 <!-- Тест кейсы -->
 
 ### Что проверяем
-* Проверка авторизации
+* Проверка регистрации нового пользователя
+* Проверка регистрации нового пользователя с уже существующим email
+* Проверка подписки на новости сайта
 * Проверка добавления в корзину нескольких книг
 * Проверка создания своего украшения
+* Проверка добавления товара в виш-лист
 * Проверка выбора характеристик компьютера 
 * Проверка добавления в корзину 
 * Проверка заполнения данных для доставвки
@@ -53,7 +56,7 @@
  
  После прохождения теста результаты можно посмотреть в Allure отчете 
  
- <img width="100%" title="allure_main" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/allure_main.png"></code>
+ <img width="100%" title="allure_main" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/allure_test.png"></code>
  
  Во вкладке Suites можно посмотреть собранные тесты, у которых описаны шаги, приложены логи, скриншот и видео прохождения теста 
  
@@ -73,7 +76,7 @@
  
  <img width="100%" title="allure_testops" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/allure_testops.png"></code>
  
- <img width="100%" title="allure_tests" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/allure_tests.png"></code>
+ <img width="100%" title="allure_tests" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/allure_testops_test.png"></code>
 
 <!-- Telegram -->
 

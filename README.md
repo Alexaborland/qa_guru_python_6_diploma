@@ -1,4 +1,4 @@
-## Проект UI автотестов 
+## Training project with Web autotests for [DemoWebShop](https://demowebshop.tricentis.com/) service
 
 <!-- Технологии -->
 <p  align="center">
@@ -17,35 +17,35 @@
 
 <!-- Тест кейсы -->
 
-### Что проверяем
-* Проверка регистрации нового пользователя
-* Проверка регистрации нового пользователя с уже существующим email
-* Проверка подписки на новости сайта
-* Проверка добавления в корзину нескольких книг
-* Проверка создания своего украшения
-* Проверка добавления товара в виш-лист
-* Проверка выбора характеристик компьютера 
-* Проверка добавления в корзину 
-* Проверка заполнения данных для доставвки
+### Test coverage
+* New user registration
+* Registration of a new user with an existing email
+* Checking a subscription to site news
+* Adding multiple books to cart
+* The creation of your decoration
+* Adding a product to a wishlist
+* Choosing different features for creating a new computer
+* Adding something to cart
+* Filling in delivery data
 
-### <img width="5%" title="Jenkins" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/images/jenkins.png"> Запуск проекта в Jenkins  
+### <img width="5%" title="Jenkins" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/images/jenkins.png"> Running the project on Jenkins  
 ### [Job](https://jenkins.autotests.cloud/job/qa_guru_6_diploma/)
 
-Тест можно собрать с параметрами. Доступны браузеры: firefox и chrome. Также доступно выбрать версии браузеров.
+The test can be assembled with parameters. Available browsers: Firefox and Chrome. It is also possible to select browser versions.
 
 <img width="100%" title="parametrs" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/parametrs.png"></code>
 
-При нажатии кнопки "Собрать с параметрами" открывается окно, где можно выбрать браузер и его версию.
+When you click the "Build With Parameters" button, a window opens where you can select the browser and its version.
 
 <img width="50%" title="browser" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/browser.png"></code>
 
 <img width="50%" title="browser_versions" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/browser_versions.png"></code>
 
-После выбора параметров нужно нажать кнопку "Собрать". Тогда начнется сборка.
+After selecting the parameters, you need to click the “Collect” button. Then the assembly will begin.
 
 <img width="50%" title="sobrat" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/sobrat.png"></code>
 
-После прохождения тестов можно увидеть результат и появившиеся отчеты в Allure и Allure TestOps
+After tests passed you can see the result and the reports that appear in Allure and Allure TestOps.
 
 <code><img width="100%" title="jenkins_stats" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/jenkins_stats.png"></code>
 
@@ -54,25 +54,25 @@
  
  ### [Report](https://jenkins.autotests.cloud/job/qa_guru_6_diploma/12/allure/)
  
- После прохождения теста результаты можно посмотреть в Allure отчете 
+ After tests passed the results can be viewed in the Allure report.
  
  <img width="100%" title="allure_main" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/allure_test.png"></code>
  
- Во вкладке Suites можно посмотреть собранные тесты, у которых описаны шаги, приложены логи, скриншот и видео прохождения теста 
+ In the "Suites" tab you can see the collected tests, which describe the steps, attach logs, a screenshot and a video of the test.
  
  <img width="100%" title="suites" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/suites.png"></code>
  
- Видео прохождения теста:
+ Video of the test:
  
  ![allure_video](https://github.com/Alexaborland/qa_guru_python_6_diploma/assets/136263543/953d43b1-8715-4eed-8044-e29a450d0c13)
 
  <!-- Allure TestOps -->
  
- ### <img width="5%" title="Allure TestOps" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/images/allure_testops.png"> Интеграция с Allure TestOps
+ ### <img width="5%" title="Allure TestOps" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/images/allure_testops.png"> Integration with Allure TestOps
  
  ### [Allure Testops](https://allure.autotests.cloud/launch/30756)
  
- Также отчетность генерируется в Allure TestOps
+ Reporting is also generated in Allure TestOps.
  
  <img width="100%" title="allure_testops" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/allure_testops.png"></code>
  
@@ -80,9 +80,9 @@
 
 <!-- Telegram -->
 
-### <img width="5%" title="Telegram" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/images/telegram.png"> Интеграция с Telegram
+### <img width="5%" title="Telegram" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/images/telegram.png"> Integration with Telegram
 
-После прохождения тестов в Telegram bot приходит сообщение с графиком и небольшой информацией о тестах.
+After tests passed the Telegram bot receives a message with a schedule and some information about the tests.
 
 <img width="50%" title="allure_tests" src="https://github.com/Alexaborland/qa_guru_python_6_diploma/blob/main/screenshots/telegram_stats.png"></code>
  
